@@ -15,4 +15,4 @@ To access the Reddit API, you must follow a sequence of steps:
 ***Useful links / resources***
 - [Sample Project](https://github.com/tstewart161/Reddit_Sentiment_Trader)
 - [Sample Project Description](https://www.reddit.com/r/algotrading/comments/nyi94x/i_made_an_algo_that_tracks_sentiment_on_reddit/)
-
+- [Praw Basic Documentation](https://praw.readthedocs.io/en/stable/getting_started/quick_start.html)
