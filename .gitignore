@@ -1,5 +1,5 @@
 # .gitignore
 .DS_Store
 .venv/
-docs/dev_settings.py
+code/dev_settings.py
 *.pyc
