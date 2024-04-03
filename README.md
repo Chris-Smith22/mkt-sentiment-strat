@@ -15,6 +15,8 @@ Christopher Smith
     - $ python -m venv .venv
     - $ source .venv/bin/activate
 3. Install dependencies from requirements.txt: pip install -r requirements.txt
+4. Follow Reddit App setup instructions detailed in api_process.md
+5. Create a file"./docs/dev_settings.py" and set CLIENT_ID, CLIENT_SECRET and USER_AGENT fields.
 
 ## Usage
 ...
