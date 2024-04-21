@@ -3,3 +3,5 @@
 .venv/
 code/dev_settings.py
 *.pyc
+code/praw.ini
+tests/

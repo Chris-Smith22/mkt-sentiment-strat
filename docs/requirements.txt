@@ -3,3 +3,4 @@ praw
 numpy
 pandas
 matplotlib
+yfinance
