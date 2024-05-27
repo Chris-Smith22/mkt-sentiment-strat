@@ -1,20 +1,26 @@
 # .gitignore
+
 # misc:
 .DS_Store
 .venv/
 *.pyc
 .vscode/
 .bashrc
+
 # Folders:
 tests/
 logs/
 results/
+old_results/
 reddit_data/
+
 # src/
 src/praw.ini
 src/qtester.py
+src/auth.py
+src/rtickers.csv
+src/sp_stocks.csv
+
 #docs/
 docs/praw.ini
 docs/nltk_data
-
-

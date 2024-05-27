@@ -12,6 +12,7 @@ sp_tickers = ['AMD', 'NVDA', 'AMC', 'SPY', 'TSLA', 'SMCI', 'AAPL',\
                         'LMT', 'IBM', 'BA']
 
 ## API Connection:
+print("\n\n")
 print(reddit.read_only)
 
 stocks = {}
@@ -25,7 +26,9 @@ for ticker in sp_tickers:
 
 ### MAIN:
 today = dt.date.today()
-yesterday = today - dt.timedelta(days=1)
+ytrd = today - dt.timedelta(days=1)
+month = ytrd.strftime("%B")
+yesterday = ytrd.strftime(date_format)
 
 submission_statistics = []
 search_range = [yesterday, yesterday] #1day range
@@ -80,11 +83,11 @@ except prawcore.exceptions.TooManyRequests as e:
 
 finally:
     dfSentimentStocks = pd.DataFrame(submission_statistics)
-    month = yesterday.strftime("%B")
+    
 
-    if not os.path.exists(f"../results/{month}"):
-        os.makedirs(f"../results/{month}")
+    if not os.path.exists(f"./results/{month}"):
+        os.mkdir(f"./results/{month}")
 
-    dfSentimentStocks.to_csv(f"../results/{month}/{yesterday}_SA.csv", index=False)
+    dfSentimentStocks.to_csv(f"./results/{month}/{yesterday}_SA.csv", index=False)
     print("\n\n\nDONE.")
 
