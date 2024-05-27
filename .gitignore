@@ -1,8 +1,20 @@
 # .gitignore
+# misc:
 .DS_Store
 .venv/
-code/dev_settings.py
 *.pyc
-code/praw.ini
+.vscode/
+.bashrc
+# Folders:
 tests/
-code/auth.py
+logs/
+results/
+reddit_data/
+# src/
+src/praw.ini
+src/qtester.py
+#docs/
+docs/praw.ini
+docs/nltk_data
+
+
