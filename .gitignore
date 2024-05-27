@@ -24,3 +24,8 @@ src/sp_stocks.csv
 #docs/
 docs/praw.ini
 docs/nltk_data
+
+#backtests/
+backtests/main1.py
+backtests/main2.py
+backtests/results_fixer.py
