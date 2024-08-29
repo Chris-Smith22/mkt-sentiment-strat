@@ -9,7 +9,7 @@ sp_tickers = ['AMD', 'NVDA', 'AMC', 'SPY', 'TSLA', 'SMCI', 'AAPL',\
                'PYPL', 'DTE', 'JPM', 'SBUX', 'MSTR', 'GME', 'MSFT', \
                 'LLY', 'QQQ', 'META', 'SNAP', 'INTC', 'MCD', 'GOOGL', \
                     'GOOG', 'TSM', 'VOO', 'NFLX', 'PLTR', 'KO', 'RTX', \
-                        'LMT', 'IBM', 'BA']
+                        'LMT', 'IBM', 'BA', 'RDDT']
 
 ## API Connection:
 print("\n\n")
@@ -88,6 +88,6 @@ finally:
     if not os.path.exists(f"./results/{month}"):
         os.mkdir(f"./results/{month}")
 
-    dfSentimentStocks.to_csv(f"./results/{month}/{yesterday}_SA.csv", index=False)
+    dfSentimentStocks.to_excel(f"./results/{month}/{yesterday}_SA.csv", index=False)
     print("\n\n\nDONE.")
 

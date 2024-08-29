@@ -2,6 +2,7 @@ nltk
 praw
 numpy
 pandas
+openpyxl
 matplotlib
 yfinance
 requests
