@@ -9,7 +9,8 @@ sp_tickers = ['AMD', 'NVDA', 'AMC', 'SPY', 'TSLA', 'SMCI', 'AAPL',\
                'PYPL', 'DTE', 'JPM', 'SBUX', 'MSTR', 'GME', 'MSFT', \
                 'LLY', 'QQQ', 'META', 'SNAP', 'INTC', 'MCD', 'GOOGL', \
                     'GOOG', 'TSM', 'VOO', 'NFLX', 'PLTR', 'KO', 'RTX', \
-                        'LMT', 'IBM', 'BA', 'RDDT']
+                        'LMT', 'IBM', 'BA', 'RDDT', 'CAVA']
+
 
 ## API Connection:
 print("\n\n")
@@ -28,6 +29,7 @@ for ticker in sp_tickers:
 today = dt.date.today()
 ytrd = today - dt.timedelta(days=1)
 month = ytrd.strftime("%B")
+#yesterday = "2024-11-20" 
 yesterday = ytrd.strftime(date_format)
 
 submission_statistics = []
@@ -88,6 +90,6 @@ finally:
     if not os.path.exists(f"./results/{month}"):
         os.mkdir(f"./results/{month}")
 
-    dfSentimentStocks.to_excel(f"./results/{month}/{yesterday}_SA.csv", index=False)
+    dfSentimentStocks.to_excel(f"./results/{month}/{yesterday}_SA.xlsx", index=False)
     print("\n\n\nDONE.")
 
