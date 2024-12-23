@@ -5,7 +5,7 @@ Algorithm to track market sentiment on Reddit to inform active investment strate
 As part of our Applied Investment Managemnt course (FINE 541) offered at McGill University, our team devised an active investment strategy with the goal of generating alpha for our endowment fund of $200,000 CAD. This involved developing a trading algorithm in Python to scrape Reddit data for sentiment intensity analysis, leveraging the VADER NLP model to produce buy and sell signals. We also conducted comprehensive backtests to validate and enhance the strategy’s performance.
 
 ## Authors
-Christopher Smith
+Christopher Smith, Ayaz Ciplak
 
 ## Getting Started
 1. Clone the repository: $ git clone https://github.com/Chris-Smith22/mkt-sentiment-strat
