@@ -18,6 +18,7 @@ Christopher Smith
 
 ## Helpful Links
 NLTK VADER model: https://www.nltk.org/_modules/nltk/sentiment/vader.html
+
 FINE 541: https://www.mcgill.ca/study/2024-2025/courses/fine-541n1
 
 ## License
