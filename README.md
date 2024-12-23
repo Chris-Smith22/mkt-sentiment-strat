@@ -2,11 +2,9 @@
 Algorithm to track market sentiment on Reddit to inform active investment strategy.
 
 ## Description
-...
-
+As part of our Applied Investment Managemnt course (FINE 541) offered at McGill University, our team devised an active investment strategy with the goal of generating alpha for our endowment fund of $200,000 CAD. This involved developing a trading algorithm in Python to scrape Reddit data for sentiment intensity analysis, leveraging the VADER NLP model to produce buy and sell signals. We also conducted comprehensive backtests to validate and enhance the strategy’s performance.
 
 ## Authors
-Ayaz Ciplak
 Christopher Smith
 
 ## Getting Started
@@ -18,11 +16,8 @@ Christopher Smith
 4. Follow Reddit App setup instructions detailed in api_process.md
 5. Create a file"./docs/dev_settings.py" and set CLIENT_ID, CLIENT_SECRET and USER_AGENT fields.
 
-## Usage
-...
-
-## Example
-...
+## Helpful Links
+NLTK VADER model: https://www.nltk.org/_modules/nltk/sentiment/vader.html
 
 ## License
 This project is licensed under the MIT License
